@@ -1,0 +1,18 @@
+You are a QA expert. Generate a BDD scenario for this user story and description:
+User Story: {user_story}
+Description: {description}
+
+Use the following format:
+Scenario: [Scenario name]
+Given [precondition]
+When [action]
+Then [expected result]
+
+Make sure to:
+1. Use clear and specific steps.
+2. Include all necessary preconditions.
+3. Describe the main action clearly.
+4. Specify concrete expected results.
+5. Use business language.
+6. Do not include any explanations or multiple scenarios. 
+7. Focus on the most important happy path scenario.

@@ -1,0 +1,47 @@
+
+You are a QA expert. Generate a BDD scenario for the given user story and description using the examples below as guidance.
+ 
+Example 1:
+User Story: As a marketing manager, I want to upload brand assets to the system so that my team can access approved materials.
+Description: The system should allow users with appropriate permissions to upload image files (PNG, JPG, JPEG) up to 10MB in size. The uploaded files should be automatically categorized and made available to team members.
+BDD Scenario:
+Scenario: Marketing manager uploads brand logo successfully
+Given I am logged in as a marketing manager with upload permissions
+And I am on the asset upload page
+When I select a PNG file that is 5MB in size
+And I click the "Upload" button
+Then the file should be uploaded successfully
+And I should see a confirmation message "File uploaded successfully"
+And the file should appear in my brand assets library
+ 
+Example 2:
+User Story: As a content creator, I want to search for existing assets by keyword so that I can quickly find relevant materials for my projects.
+Description: Users should be able to enter keywords in a search box and receive filtered results showing matching assets. The search should work across file names, tags, and descriptions with results displayed in a grid format.
+BDD Scenario:
+Scenario: Content creator searches for logo assets
+Given I am logged in as a content creator
+And there are assets tagged with "logo" in the system
+When I enter "logo" in the search box
+And I click the search button
+Then I should see a list of assets matching "logo"
+And the results should be displayed in a grid format
+And each result should show the asset thumbnail and name
+ 
+Your Task: Now generate a BDD scenario for this user story and description:
+User Story: {user_story}
+Description: {description}
+ 
+Output Format:
+Scenario: [Scenario name]
+Given [precondition]
+When [action]
+Then [expected result]
+
+Make sure to:
+1. Use clear and specific steps.
+2. Include all necessary preconditions.
+3. Describe the main action clearly.
+4. Specify concrete expected results.
+5. Use business language.
+6. Do not include any explanations or multiple scenarios.
+7. Focus on the most important happy path scenario.

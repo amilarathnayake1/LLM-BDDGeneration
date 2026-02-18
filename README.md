@@ -66,9 +66,9 @@ gemini=GeminiConfig(
 
 1. Prepare your input data in Excel/CSV format with columns:
    - `ID`: Unique identifier
-   - `User Story`: User story (optional)
-   - `Requirements`: Detailed requirements
-   - `Manual Scenario`: Reference BDD scenario for comparison
+   - `User Story`: User story
+   - `Requirements`: Detailed description
+   - `Manual Scenario`: Reference BDD scenario
 
 2. Update the file path in `config.py`:
 ```python
@@ -187,37 +187,4 @@ bdd_generator/
 └── requirements.txt          # Dependencies
 ```
 
-## Research Application
 
-This tool was developed for research on automated BDD scenario generation. Key findings:
-
-- **Input Quality**: Detailed requirements alone maintain 94-98% of baseline performance
-- **Model-Specific Prompting**: GPT-4 performs best with zero-shot, Claude with Chain-of-Thought, Gemini with Few-Shot
-- **Evaluation**: DeepSeek shows highest correlation (ρ=0.35-0.72) with human expert assessment
-
-For research details, see the associated academic paper.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Citation
-
-If you use this tool in your research, please cite:
-
-```bibtex
-@software{bdd_generator,
-  author = {Your Name},
-  title = {BDD Scenario Generator: Automated BDD Generation with LLMs},
-  year = {2025},
-  url = {https://github.com/yourusername/bdd_generator}
-}
-```
-
-## Support
-
-For issues, questions, or contributions, please open an issue on GitHub.
